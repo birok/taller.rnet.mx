@@ -1,45 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-<link rel="stylesheet" href="estilo.css">
-   <title>Document</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="estilo.css" rel="stylesheet">
 </head>
+
 <body>
-<div id="main">
-     <nav>
-       <div class="nav-xbootstrap">
-         <ul>
-           <li style="padding-right: 300px; padding-left: 50px;"><img src="img/LogoRnet.png" width="40px" height="40px" alt="" srcset=""></li>
-           <li><a href="./index.html">Inicio</a></li>
-           <li><a href="javascript:void(0)">Soporte técnico<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
-             <ul class="dropdown">
-               <li><a href="./soporteTecnico.html#Asistencia-técnica-remota">Asistencia técnica remota</a></li>
-               <li><a href="./soporteTecnico.html#recuperación-de-archivos" target="black">Respaldo y recuperación de archivos</a>
-               <li><a href="./soporteTecnico.html#Instalación-y-Actualización-de-sistemas-operativos" target="black">Instalación y Actualización de sistemas operativos</a></li>
-               <li><a href="./soporteTecnico.html#Actualización-de-equipos-lentos" target="black">Actualización de equipos lentos</a></li>
-               <li><a href="./soporteTecnico.html#Reparaciones-físicas-por-caidas-o-golpes" target="black">Reparaciones físicas por caidas o golpes</a></li>
-               <li><a href="./soporteTecnico.html#Reemplazo-de-hardware" target="black">Reemplazo de hardware</a></li>
-             </ul>
-            </li>
-           <li><a href="./index.html#feature-second">Ensamble</a></li>
-           <li><a href="./index.html#feature-last">Servidores</a></li> 
-         </ul>
-       </div>
-       <div class="nav-bg-xbootstrap">
-         <div class="navbar-xbootstrap"> <span></span> <span></span> <span></span> </div>
-         <a href="./index.html" class="title-mobile">rNet <img src="img/LogoRnet.png" width="30px" height="30px" alt="" srcset=""></a>
-       </div>
-     </nav>
-     <div class='content'>
-     </div>
- </div>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="funsion.js"></script>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <table>
+          <tr>
+            <td>
+              <img src="img/LogoRnet.png" alt="">
+            </td>
+            <td>
+              <h1><a href="./index.html" class="scrollto"><span>rNet</span></a></h1>
+            </td>
+          </tr>
+        </table>
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="./index.html">Inicio</a></li>
+          <li class="drop-down"><a href="">Soporte técnico</a>
+            <ul>
+              <li><a href="soporteTecnico.html#Asistencia-técnica-remota" target="black">Asistencia técnica remota</a></li>
+              <li><a href="soporteTecnico.html#recuperación-de-archivos" target="black">Respaldo y recuperación de archivos</a></li>
+              <li><a href="soporteTecnico.html#Instalación-y-Actualización-de-sistemas-operativos" target="black">Instalación y Actualización de sistemas operativos</a></li>
+              <li><a href="soporteTecnico.html#Actualización-de-equipos-lentos" target="black">Actualización de equipos lentos</a></li>
+              <li><a href="soporteTecnico.html#Reparaciones-físicas-por-caidas-o-golpes" target="black">Reparaciones físicas por caidas o golpes</a></li>
+              <li><a href="soporteTecnico.html#Reemplazo-de-hardware" target="black">Reemplazo de hardware</a> </li>
+            </ul>
+          </li>
+          <li><a href="#services">Ensamble</a></li>
+          <li><a href="#portfolio">Servidores</a></li>
+          <li><a href="#footer">Contactanos</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="funsion.js"></script>
+
 </body>
 </html>
